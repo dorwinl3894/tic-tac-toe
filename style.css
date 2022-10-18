@@ -42,7 +42,9 @@ body {
 
     gap: 25px;
 }
-
+.main-area-intro {
+    margin: 0 auto;
+}
 .player-name-div {
     display: flex;
     justify-content: space-evenly;
@@ -64,6 +66,7 @@ button:hover {
 
 input[type="text"] {
     padding: 2px;
+    font-size: 18px;
 }
 
 #player1-name::after{
@@ -72,7 +75,7 @@ input[type="text"] {
 #player2-name::after {
     content: "(O)";
 }
-.game-area {
+#game-area {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 25px auto;
     width: 50%;
@@ -82,8 +85,14 @@ input[type="text"] {
     grid-template-rows: repeat(3, 1fr);
     background-color: white;
     gap: 5px;
+    pointer-events: none;
+    opacity: 0.5;
 }
-
+#player-turn-indicator {
+    font-size: 22px;
+    margin: 0 auto; 
+    display: none;
+}
 .game-area-square {
     background-color: wheat;
     display: flex;
@@ -95,4 +104,11 @@ input[type="text"] {
 .not-clicked:hover {
     cursor: pointer;
     background-color: rgb(243, 214, 159);
+}
+
+.p1 {
+    
+}
+.p2 {
+    
 }
